@@ -1,3 +1,5 @@
+//AS A CREATIVITY, I CREATE JSON STORAGE TO SAVE EVERYTHING THAT THE USER DO IN A FILE CALLED JsonFile.json SO USER
+//CAN USE THAT TO CHECK EVERYTHING HE DID EVEN IF IT IS SEPARATE A DIFFERENT FILES
 using System;
 
 class Program
@@ -27,6 +29,8 @@ class Program
                 entry._promptText = _question.GetRandomPrompt();
                 entry._entryText = Console.ReadLine();
                 _journal.AddEntry(entry);
+                //save data to json
+                _journal.SaveToJson(entry);
             }else if(number == 2)
             {
                 _journal.DisplayAll();
