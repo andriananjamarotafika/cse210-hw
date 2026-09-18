@@ -7,9 +7,8 @@ class Program
         string response;
         do
         {
-            Random randomGenerator = new Random();
-            // Console.WriteLine("What is the magic number?");
-            int magicNumber = randomGenerator.Next(1, 101);
+            Console.WriteLine("What is the magic number?");
+            int magicNumber = int.Parse(Console.ReadLine());
             bool isGuessed = false;
             int guessCount = 0;
             while (!isGuessed)
