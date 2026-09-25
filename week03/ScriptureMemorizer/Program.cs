@@ -1,5 +1,6 @@
+//I HAD SOME EXTRA IN THE PROGRAM, SOMETIMES THE USER TRY TO FIND THE CORRECT WORD BUT HE IS STRUGGLING SO
+//HE CAN ASK FOR HELP AND WE WILL SHOW HIM THE ANSWER INSTEAD OF RESTARTING THE PROGRAM. 
 using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -19,10 +20,14 @@ class Program
             script1.HideRandomWords(hiddenWord++);
             Console.WriteLine(script1.GetDisplayText());
             Console.WriteLine("");
-            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            Console.WriteLine("Press enter to continue or type 'quit' to finish (If you have some struggle, enter 'help'):");
             response = Console.ReadLine();
             if(response == "quit")
             {
+                break;
+            }else if(response == "help")
+            {
+                Console.WriteLine(script1.GetText());
                 break;
             }
         }

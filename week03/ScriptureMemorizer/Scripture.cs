@@ -7,9 +7,12 @@ public class Scripture
     private Reference _reference ;
     private List<Word> _words = new List<Word>();
 
+    private string _text ; 
+
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
+        _text = text;
         string [] cleanWords = text.Split(" ");
         foreach (string word in cleanWords)
         { 
@@ -64,6 +67,10 @@ public class Scripture
             }
         }
         return decision;
+    }
+
+    public string GetText(){
+        return _text;
     }
 
 }

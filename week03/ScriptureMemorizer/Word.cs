@@ -15,11 +15,6 @@ public class Word
 
     }
 
-    public void Show()
-    {
-        
-    }
-
     public bool isHidden()
     {
         _isHidden = _text.Contains("_");
