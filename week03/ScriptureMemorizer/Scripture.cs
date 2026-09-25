@@ -29,6 +29,15 @@ public class Scripture
             { 
                 wordsToHide.Hide();
             }
+            else
+            {
+                if (_words.All(word => word.isHidden()))
+                {
+                    break;
+                }
+
+                i--;
+            }
 
         }
 
