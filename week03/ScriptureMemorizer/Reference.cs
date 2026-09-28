@@ -28,8 +28,4 @@ public class Reference
     {
         return _description;
     }
-
-    
-
-
 }
