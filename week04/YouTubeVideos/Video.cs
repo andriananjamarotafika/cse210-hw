@@ -33,7 +33,7 @@ public class Video
         Author : {_author}
         Length : {_length} seconds
 
-        COMMENTS :
+        {NumberOfComments()} COMMENTS :
         """);
         foreach(Comment comment in comments)
         {
