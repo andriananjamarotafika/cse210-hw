@@ -14,12 +14,6 @@ public class Address
         _country = country;    
     }
 
-    public bool IsUsa()
-    {
-        string countryLower = _country.ToLower();
-        return (countryLower == "usa" ) ? true : false;
-    }
-
     public string ShowAdress()
     {
         string Address = $"""
@@ -28,6 +22,12 @@ public class Address
         {_country}
         """;
         return Address;
+    }
+
+    public bool IsUsa()
+    {
+        string countryLower = _country.ToLower();
+        return (countryLower == "usa" ) ? true : false;
     }
     
 }
